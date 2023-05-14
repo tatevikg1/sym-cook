@@ -12,6 +12,7 @@
         "doctrine/orm": "^2.15",
         "symfony-bundles/json-request-bundle": "^4.1",
         "symfony/console": "6.3.*",
+        "symfony/doctrine-bridge": "6.3.*",
         "symfony/dotenv": "6.3.*",
         "symfony/flex": "^2.2",
         "symfony/framework-bundle": "6.3.*",

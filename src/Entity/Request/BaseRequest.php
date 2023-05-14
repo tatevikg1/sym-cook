@@ -4,7 +4,7 @@ namespace App\Entity\Request;
 
 use Symfony\Component\HttpFoundation\Request;
 
-abstract class BaseRequest extends Request
+abstract class BaseRequest extends Request implements RequestInterface
 {
     public function __construct(
         array $query = [],

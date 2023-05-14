@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Util\Resolver;
+namespace App\Util;
 
 
 use App\Entity\Request\RegisterRequest;

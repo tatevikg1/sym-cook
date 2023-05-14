@@ -7,15 +7,13 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 #[Attribute] class RegisterRequest extends BaseRequest
 {
-    /**
-     * @Assert\Blank()
-     */
+    #[Assert\Type('string')]
+    #[Assert\NotBlank]
+    #[Assert\Email]
     protected string $email;
 
-    /**
-     * @Assert\NotBlank
-     * @Assert\Length(min = 4, max = 6)
-     */
+    #[Assert\Type('string')]
+    #[Assert\NotBlank]
     protected string $password;
 
     public function getEmail(): string
