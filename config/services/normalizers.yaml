@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+#  app.normalizer.register_request:
+#    class: App\Normalizer\RegisterRequestDenormalizer
+#    tags:
+#      - { name: serializer.normalizer, request: 'App\Entity\Request\RegisterRequest' }
+
+#  App\Entity\Request\RegisterRequest:
+#    tags: ['request_listener']
