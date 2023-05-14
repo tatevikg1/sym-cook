@@ -5,8 +5,6 @@ use App\Entity\Request\RegisterRequest;
 use App\Service\RegistrationService;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Serializer\SerializerInterface;
-use Symfony\Component\Validator\Exception\ValidatorException;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class RegistrationController extends BaseController

@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d8341f5-ccbf-4ec9-92d5-d3c2843c5f71" name="Changes" comment="response normalizer">
+      <change afterPath="$PROJECT_DIR$/src/Entity/EntityInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validator/UniqueForTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validator/UniqueForTableValidator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Request/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Request/RegisterRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +168,7 @@
       <workItem from="1683823597305" duration="4082000" />
       <workItem from="1683964315110" duration="10380000" />
       <workItem from="1683981014436" duration="29093000" />
-      <workItem from="1684067418750" duration="15785000" />
+      <workItem from="1684067418750" duration="20932000" />
     </task>
     <task id="LOCAL-00001" summary="response normalizer">
       <created>1684082956008</created>
@@ -173,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684082956008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="response normalizer">
+      <created>1684084246853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684084246853</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
