@@ -5,7 +5,6 @@ namespace App\Service;
 use App\Entity\Request\RequestInterface;
 use App\Entity\Response\RegisterUserResponse;
 use App\Entity\User;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 

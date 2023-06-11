@@ -3,11 +3,11 @@
 namespace App\Entity\Request;
 
 use App\Entity\User;
+use App\Validator\UniqueForTable;
 use Attribute;
 use Symfony\Component\Validator\Constraints as Assert;
-use App\Validator\UniqueForTable;
 
-#[Attribute] class RegisterRequest extends BaseRequest
+#[\Attribute] class RegisterRequest extends BaseRequest
 {
     #[Assert\Type('string')]
     #[Assert\NotBlank]

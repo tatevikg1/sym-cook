@@ -21,7 +21,7 @@ abstract class BaseRequest extends Request implements RequestInterface
 
     protected function setAttributes(mixed $content): void
     {
-        foreach($content as $key => $value) {
+        foreach ($content as $key => $value) {
             $this->$key = $value;
         }
     }

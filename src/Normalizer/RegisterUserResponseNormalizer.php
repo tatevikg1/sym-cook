@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Normalizer;
@@ -13,10 +14,10 @@ class RegisterUserResponseNormalizer implements NormalizerInterface
     {
         return [
             'status' => ResponseStatus::SUCCESS,
-            'data' =>  [
+            'data' => [
                 'id' => $object->getUser()->getId(),
                 'email' => $object->getUser()->getEmail(),
-            ]
+            ],
         ];
     }
 

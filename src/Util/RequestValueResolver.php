@@ -2,7 +2,6 @@
 
 namespace App\Util;
 
-
 use App\Entity\Request\RegisterRequest;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;
@@ -10,9 +9,6 @@ use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;
 
 class RequestValueResolver implements ArgumentValueResolverInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function supports(Request $request, ArgumentMetadata $argument): bool
     {
         foreach ($argument->getAttributes() as $attribute) {
@@ -20,12 +16,10 @@ class RequestValueResolver implements ArgumentValueResolverInterface
                 return true;
             }
         }
+
         return false;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function resolve(Request $request, ArgumentMetadata $argument): iterable
     {
         $requestClass = RegisterRequest::class;

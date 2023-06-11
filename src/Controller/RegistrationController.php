@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Entity\Request\RegisterRequest;
@@ -10,6 +11,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 class RegistrationController extends BaseController
 {
     private RegistrationService $registrationService;
+
     public function __construct(
         ValidatorInterface $validator,
         RegistrationService $registrationService,
@@ -19,7 +21,7 @@ class RegistrationController extends BaseController
     }
 
     #[Route('/register', name: 'register', requirements: ['request' => RegisterRequest::class], methods: 'POST')]
-    public function register(#[RegisterRequest]  $request): JsonResponse
+    public function register(#[RegisterRequest] $request): JsonResponse
     {
         $this->validate($request);
         $registerUserResponse = $this->registrationService->registerUser($request);

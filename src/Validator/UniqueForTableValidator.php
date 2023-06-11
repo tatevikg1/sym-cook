@@ -7,7 +7,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 
-#[Attribute] class UniqueForTableValidator extends ConstraintValidator
+#[\Attribute] class UniqueForTableValidator extends ConstraintValidator
 {
     private EntityManagerInterface $entityManager;
 
@@ -25,7 +25,7 @@ use Symfony\Component\Validator\ConstraintValidator;
         $repository = $this->entityManager->getRepository($constraint->getTable());
         $existingEntity = $repository->findOneBy([$constraint->getColumn() => $value]);
 
-        if ($existingEntity !== null) {
+        if (null !== $existingEntity) {
             $this->context->buildViolation($constraint->message)
                 ->setParameter('{{ value }}', $value)
                 ->addViolation();

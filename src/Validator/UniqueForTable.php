@@ -5,7 +5,7 @@ namespace App\Validator;
 use Attribute;
 use Symfony\Component\Validator\Constraint;
 
-#[Attribute] class UniqueForTable extends Constraint
+#[\Attribute] class UniqueForTable extends Constraint
 {
     public string $message = 'This value is not unique for the given table.';
     private string $table;
